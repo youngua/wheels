@@ -1,0 +1,115 @@
+<!-- 
+2020 Web Type
+Designed & Coded by Grace Young
+Last Updated: March 28, 2020
+
+resource: https://codepen.io/weavermedia/pen/yVYGGx
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    
+    <title>WHEELS</title>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar-container">
+        <h1>The world is full of circles</h1>
+     
+        <div class="sidebar-content"> 
+        
+                    <h2>Parameters</h2>
+
+                    <div class="section">
+
+                    <h3>Typeface</h3>
+                    <p class="wheels-gon">Wheels-gon</p>
+                    <p>Wheels-round</p>
+
+                        <div class="slider">
+                            <input id="variationSlider" type="range" min="100" max="1000" step="0.1" value="100">
+                        </div>
+
+                    <h3>Font-size</h3>
+                        <div class="slider">
+                            <input id="sizeSlider" type="range" min="10" max="400" value="auto">
+                        </div>
+
+                    <h3>Line-height</h3>
+                        <div class="slider">
+                            <input id="lineHeightSlider" type="range" min="45" max="500" value="0" step="0.1">
+                        </div>
+
+                    <h3>Tracking</h3>
+                        <div class="slider">
+                            <input id="trackingSlider" type="range" min="0" max="10" value="0" step="0.1">
+                        </div>
+
+                    <div class="slider"></div>
+                    <h3>Alignment</h3>
+                </div>
+                
+                <div class="about-content" id="about-content">
+                
+                <p>Wheels-gon and wheels-round is a variable typeface experiment made as a project for Marie Otsuka 2020 Spring Web Type course at the Rhode Island School of Design.</p>
+    
+                <p>It's form is inspired by the circle grid and the fact that "nothing in the physical world passes the perfect circle test, where every point on the circumference is exactly equidistant from the circle's center."</p>
+    
+                <p>Free for non-commercial use. Attribute typeface to graceyoung.design</p>
+    
+                <p>Want to say Hello or get in touch, reach her at gyoung@risd.edu</p>
+    
+                <p class="citation">Source text: https://www.smithsonianmag.com/travel/world-full-circles-180954529/
+                </p>
+            </div>
+         </div>
+         
+        <button onclick="slide();">About</button>
+         
+    </div>
+
+<!-- MAIN SECTION 1 -->
+    <div class="main-content main-1">
+
+        <img src="imgs/1-pottery.png" />
+        
+        <input type="text" value="A" id="white-text" spellcheck="false">
+    </div>
+
+<!-- MAIN SECTION 2 -->
+    <div class="main-content main-2">
+
+        <ol>
+            <li>
+                <input type="text" value="wheels-gon" class="black-text" spellcheck="false">
+            </li>
+       
+            <li>
+                <input type="text" value="wheels-round" class="black-text" spellcheck="false">
+            </li>
+        </ol>
+ 
+    </div>
+
+<!-- MAIN SECTION 3 -->
+    <div class="main-content main-3">
+
+        <textarea name="text-area" id="text-area" rows="5" cols="50" spellcheck="false">From subatomic particles to carefully built structures, nothing in the physical world passes the perfect circle test, where every point on the circumference is exactly equidistant from the circle’s center.</textarea>
+
+    </div>
+
+
+
+
+<!-- SOME JAVASCRIPT -->
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
