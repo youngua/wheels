@@ -1,5 +1,5 @@
 /*
- * toggles the width of about content in sidebar
+ * toggles the width of About-content in sidebar
  */
 var about = document.getElementById("about-content");
 function slide() {
@@ -78,6 +78,29 @@ sliders.forEach(slider => {
     slider.oninput = function () {
         container.style.setProperty(`--${this.id}`, this.value);
         output.innerHTML = this.value;
+
+        if (this.value == 100) {
+            // alert("hi");
+            document.getElementById("hero-img").src = "images/1-nest.png";
+        } else if (this.value == 200) {
+            document.getElementById("hero-img").src = "images/2-web.png";
+        } else if (this.value == 300) {
+            document.getElementById("hero-img").src = "images/3-stonehedge.png";
+        } else if (this.value == 400) {
+            document.getElementById("hero-img").src = "images/4-nautilus.png";
+        } else if (this.value == 500) {
+            document.getElementById("hero-img").src = "images/5-water.png";
+        } else if (this.value == 600) {
+            document.getElementById("hero-img").src = "images/6-wood.png";
+        } else if (this.value == 700) {
+            document.getElementById("hero-img").src = "images/7-wheel.png";
+        } else if (this.value == 800) {
+            document.getElementById("hero-img").src = "images/8-eye.png";
+        } else if (this.value == 900) {
+            document.getElementById("hero-img").src = "images/9-bridge.png";
+        } else if (this.value == 1000) {
+            document.getElementById("hero-img").src = "images/10-pottery.png";
+        }
     };
 });
 

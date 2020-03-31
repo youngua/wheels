@@ -2,37 +2,38 @@
 
 * {
     margin: 0;
-    font-family: WHEELS;
+    font-family: "WHEELS";
     text-transform: uppercase;
-    font-variation-settings: "ROUN" 1000;
 }
 
 @font-face {
-    font-family: WHEELS;
-    src: url(fonts/WHEELSGX.ttf);
-}
+    font-family: 'WHEELS';
+    src: url('WHEELSGX.ttf') format('ttf');
+  }
 
 /* ---------------------- Typography  ---------------------- */
-
 
 h1 {
     color: white;
     background-color: rgb(66, 103, 255, 0.8);
     font-size: 2.4vw;
-    font-variation-settings: "ROUN" 1000;
 }
 
 h2 {
     color: #4267FF;
     font-size: 1.5vw;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 h3 {
     color: #4267FF;
-    font-size: 1vw;
+    font-size: .8vw;
     padding-bottom: 4%;
 }
+
+.demo-text {
+    font-variation-settings: "ROND" var(--varSlider);
+  }
 
 @media screen and (min-width: 1000px) {
     /* Large screens */
@@ -51,12 +52,80 @@ h1, .sidebar-content, button {
 
 .sidebar-content p {
     font-size: 1.8vw;
-    padding-bottom: 6%;
+    padding-top: 6%;
 }
 
-.wheels-gon {
-    font-variation-settings: "ROUN" 100;
+.wheels-round {
+    font-variation-settings: "ROND" var(--varSlider);
+    --varSlider: 1000;
 }
+
+:root {
+    --varSlider: 1000;
+    --sizeSlider: 100;
+  }
+
+.slider-container:not(:first-child) {
+    margin-top: 1.5rem;
+} 
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: .2rem;
+    border-radius: .25rem;
+    background: #dee7ec;
+    outline: none;
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #4267FF;
+    cursor: pointer;
+  }
+
+.slider::-moz-range-thumb {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: #4267FF;
+    cursor: pointer;
+  }
+
+.slider::-webkit-slider-thumb:active {
+    cursor: -webkit-grabbing;
+  }
+  
+.slider::-moz-range-thumb:active {
+    cursor: -moz-grabbing;
+  }
+
+.button {
+    background: #fff;
+    border: 3px solid #dee7ec;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: .2rem .7rem;
+    outline: none;
+  }
+
+.button:hover,
+.button:focus {
+    background: rgb(66, 103, 255, 0.8);
+    color: white;
+  }
+
 
 /* ----- ABOUT  ----- */
 
@@ -89,7 +158,7 @@ p.citation{
     position: relative;
 }
 
-button {
+.about-btn {
     position: absolute;
     bottom: 0;
     border: none;
@@ -105,8 +174,9 @@ button {
 
 /* ----- SLIDERS ----- */
 
-.slider {
-    padding-bottom: 10%;
+.slider-label {
+    font-size: 0.8rem;
+    color: #4267FF;
 }
 
 /* ---------------------- Main content  ---------------------- */
@@ -139,7 +209,6 @@ button {
     position: absolute;  
     background: none;
     border: none;
-    font-variation-settings: "ROUN" 1000, "ROUN" 700, "ROUN" 500, "ROUN" 300, "ROUN" 100;
 }
 
 #white-text {
