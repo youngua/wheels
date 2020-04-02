@@ -6,6 +6,83 @@ function slide() {
     about.classList.toggle('show');
 }
 
+/*
+ * when the reset button is clicked, switch images
+ */
+// variation reset button: active
+document.getElementById('var-reset').onmousedown = function () {
+    document.getElementById("var-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('var-reset').onmouseup = function () {
+    document.getElementById("var-reset").src = "images/reset-default.png";
+};
+
+// variation reset button: hover
+document.getElementById('var-reset').onmouseover = function () {
+    document.getElementById("var-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('var-reset').onmouseleave = function () {
+    document.getElementById("var-reset").src = "images/reset-default.png";
+};
+
+// size reset button: active
+document.getElementById('size-reset').onmousedown = function () {
+    document.getElementById("size-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('size-reset').onmouseup = function () {
+    document.getElementById("size-reset").src = "images/reset-default.png";
+};
+
+// size reset button: hover
+document.getElementById('size-reset').onmouseover = function () {
+    document.getElementById("size-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('size-reset').onmouseleave = function () {
+    document.getElementById("size-reset").src = "images/reset-default.png";
+};
+
+// line-Height reset button: active
+document.getElementById('lineHeight-reset').onmousedown = function () {
+    document.getElementById("lineHeight-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('lineHeight-reset').onmouseup = function () {
+    document.getElementById("lineHeight-reset").src = "images/reset-default.png";
+};
+
+// line-Height reset button: hover
+document.getElementById('lineHeight-reset').onmouseover = function () {
+    document.getElementById("lineHeight-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('lineHeight-reset').onmouseleave = function () {
+    document.getElementById("lineHeight-reset").src = "images/reset-default.png";
+};
+
+// tracking reset button: active
+document.getElementById('tracking-reset').onmousedown = function () {
+    document.getElementById("tracking-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('tracking-reset').onmouseup = function () {
+    document.getElementById("tracking-reset").src = "images/reset-default.png";
+};
+
+// tracking reset button: hover
+document.getElementById('tracking-reset').onmouseover = function () {
+    document.getElementById("tracking-reset").src = "images/reset-clicked.png";
+};
+
+document.getElementById('tracking-reset').onmouseleave = function () {
+    document.getElementById("tracking-reset").src = "images/reset-default.png";
+};
+
+
+
 
 /*
  * Expand height of textarea

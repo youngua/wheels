@@ -25,54 +25,57 @@ resource: https://codepen.io/weavermedia/pen/yVYGGx
         <h1>The world is full of circles</h1>
      
         <div class="sidebar-content"> 
-        
-                    <h2>Parameters</h2>
 
                     <div class="section">
 
-                    
                     <p class="demo-text">Wheels-gon</p>
                     <p class="wheels-round demo-text">Wheels-round</p>
 
                     <!-- Font Variation Control -->
                     <div class="slider-container">
-                            <input id="varSlider" class="slider" type="range" min="100" max="1000" value="1000" step="100" name="varSlider" data-index="0">
-                           
+                      
+                            <input id="varSlider" class="slider" type="range" min="100" max="1000" value="1000" step="100" name="varSlider" data-index="0"> 
+
+                            <button class="button" data-index="0">
+                              <img id="var-reset" src="images/reset-default.png" />
+                            </button>
+                              
                             <div class="slider-controls">
-                              <label for="varSlider"  class="slider-label">
-                                GON-ROUND : <span class="output" id="output" data-index="0"></span>   
-                              </label>
-                              <button class="button" data-index="0">
-                                Reset
-                              </button>
-                            </div>
+                            <label for="varSlider"  class="slider-label">GON-ROUND :
+                            <span class="output slider-label" id="output" data-index="0"></span>
+                          </label>
+                           
+                          </div>
+
                     </div>
                     
                     <!-- Font-size Control -->
                     <div class="slider-container">
                             <input id="sizeSlider" class="slider" type="range" min="10" max="400" value="100" name="sizeSlider" data-index="1">
 
+                            <button class="button" data-index="1">
+                              <img id="size-reset" src="images/reset-default.png" />
+                            </button>
+
                             <div class="slider-controls">
-                                <label for="sizeSlider" class="slider-label">
-                                  Font-size : <span class="output" data-index="1"></span>   
+                                <label for="sizeSlider" class="slider-label">Font-size : 
+                                  <span class="output" data-index="1"></span>   
                                 </label>
-                                <button class="button" data-index="1">
-                                  Reset
-                                </button>
                               </div>
-                    </div>
+                        </div>
 
                     <!-- Line-height Control -->
                     <div class="slider-container">
                             <input id="lineHeightSlider" class="slider" type="range" min="45" max="500" value="0" step="1" data-index="2">
 
+                            <button class="button" data-index="2">
+                              <img id="lineHeight-reset" src="images/reset-default.png" />
+                            </button>
+
                             <div class="slider-controls">
                                 <label for="lineHeightSlider" class="slider-label">
                                   Line-Height : <span class="output" data-index="2"></span>   
                                 </label>
-                                <button class="button" data-index="2">
-                                  Reset
-                                </button>
                               </div>  
                         </div>
                 
@@ -80,14 +83,15 @@ resource: https://codepen.io/weavermedia/pen/yVYGGx
                     <div class="slider-container">
                             <input id="trackingSlider" class="slider" type="range" min="0" max="10" value="0" step="0.1" data-index="3">
 
+                            <button class="button" data-index="3">
+                              <img id="tracking-reset" src="images/reset-default.png" />
+                            </button>
+
                             <div class="slider-controls">
                                 <label for="trackingSlider" class="slider-label">
                                   Tracking : <span class="output" data-index="3"></span>   
                                 </label>
-                                <button class="button" data-index="3">
-                                  Reset
-                                </button>
-                              </div>
+                            </div>
                     </div> 
 
                     
@@ -138,6 +142,10 @@ resource: https://codepen.io/weavermedia/pen/yVYGGx
 
 <!-- MAIN SECTION 3 -->
     <div class="main-content main-3">
+
+      <div class="light-dark-mode">
+        <button class="light-dark-button"><div class="circle dark"></div></button>
+      </div>
 
         <textarea name="text-area" id="text-area" class="demo-text" rows="5" cols="50" spellcheck="false">From subatomic particles to carefully built structures, nothing in the physical world passes the perfect circle test, where every point on the circumference is exactly equidistant from the circle’s center.</textarea>
 
