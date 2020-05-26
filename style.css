@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    font-family: "WHEELS";
+    font-family: 'Wheels';
     text-transform: uppercase;
 }
 
@@ -16,9 +16,9 @@ html, body {
 
 /* ---------------------- Typography  ---------------------- */
 
-@font-face {
-    font-family: 'WHEELS';
-    src: url('WHEELSGX.ttf') format('ttf');
+@font-face{
+    font-family: 'Wheels';
+    src: url('WHEELSGX.ttf') format('truetype-variations');			
 }
 
 h1 {
